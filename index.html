@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحديث تاريخ ملف الإكسل</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+       
+</head>
+<body>
+
+    <div class="container">
+        <h2>تحديث تواريخ</h2>
+        
+        <div class="form-group">
+            <label for="excelFile">1. اختر ملف اكسل:</label>
+            <input type="file" id="excelFile" accept=".xlsx, .xls">
+        </div>
+        
+        <div class="form-group">
+            <label for="oldDate">2. التاريخ القديم المراد تغييره (مثال: 2025-3):</label>
+            <input type="text" id="oldDate" placeholder="مثال: 2025-3">
+        </div>
+
+        <div class="form-group">
+            <label for="newDate">3. التاريخ الجديد (مثال: 2026-1):</label>
+            <input type="text" id="newDate" placeholder="مثال: 2026-1">
+        </div>
+        
+        <button onclick="processExcel()">تحديث وتحميل الملف</button>
+        
+        <div id="message"></div>
+    </div>
+
+    <script src="main.js">
+    </script>
+</body>
+</html>
